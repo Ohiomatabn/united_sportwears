@@ -51,6 +51,134 @@
         </div>
       </div>
     </nav>
+
+    <!--Main-->
+    <main class="hidden">
+      <section id="hero" class="w-100 vh-100">
+        <div class="overlay w-100 h-100">
+          <div class="container h-100">
+            <div
+              class="showcase text-white h-100 d-flex flex-column justify-content-center align-items-center"
+            >
+              <h1 class="display-3 fw-bold text-center">
+                Unify Sportswear Boutique
+              </h1>
+              <p class="fs-4 fw-bold text-center">
+                Get Your 2024/25 Season Jersey with Unify
+              </p>
+              <a
+                href="#"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+                class="btn btn-danger py-2 px-4"
+                >Order</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title font fs-5" id="exampleModalLabel">
+                Unify Sportswear
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body text-bg-white text-black">
+              <form action="#">
+                <div class="form-floating mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="floatingInput"
+                    placeholder="name@example.com"
+                    required
+                  />
+                  <label for="floatingInput">Name</label>
+                </div>
+                <div class="form-floating mb-3">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="floatingInput"
+                    placeholder="Password"
+                    required
+                  />
+                  <label for="floatingInput">Email</label>
+                </div>
+                <div class="form-floating mb-3">
+                  <select
+                    class="form-select"
+                    id="floatingSelect"
+                    aria-label="Floating label select example"
+                    required
+                  >
+                    <option value="0">Home Kit</option>
+                    <option value="1">Away Kit</option>
+                    <option value="2">Third Kit</option>
+                  </select>
+                  <label for="floatingSelect">Select Kit</label>
+                </div>
+                <div class="form-floating mb-3">
+                  <select
+                    class="form-select"
+                    id="floatingSelect"
+                    aria-label="Floating label select example"
+                    required
+                  >
+                    <option value="sm">SM</option>
+                    <option value="md" selected>MD</option>
+                    <option value="lg">LG</option>
+                    <option value="xl">XL</option>
+                    <option value="xxl">XXL</option>
+                  </select>
+                  <label for="floatingSelect">Select Size</label>
+                </div>
+                <div class="form-floating mb-3">
+                  <input
+                    type="number"
+                    name="amount"
+                    id="amount"
+                    max="10"
+                    min="1"
+                    checked
+                    required
+                    placeholder="1"
+                    class="form-control"
+                  />
+                  <label for="Ammount">Amount</label>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Cancel
+              </button>
+              <button type="button" class="btn btn-primary">Order</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
     <script src="bootstrap.bundle.min.js"></script>
   </body>
 </html>
